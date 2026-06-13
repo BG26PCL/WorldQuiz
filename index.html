@@ -79,6 +79,50 @@ header{display:flex;align-items:center;justify-content:space-between;padding:8px
 .rans{margin-top:5px;color:var(--txt)}
 .ans-flag{margin-top:8px;height:50px;display:flex;align-items:center;justify-content:center;background:var(--surf2);border-radius:6px;padding:6px}
 .ans-flag img{max-height:38px;max-width:100%;object-fit:contain;border-radius:2px}
+
+/* ── Mobile layout ── */
+@media (max-width: 600px) {
+  header{padding:8px 12px;gap:8px}
+  .logo{font-size:14px}
+  .tab{padding:4px 10px;font-size:12px}
+  .search-wrap{max-width:100%;min-width:0;flex:1}
+  .scores{gap:6px}
+  .pill{padding:3px 8px;font-size:12px}
+  .snum{font-size:13px}
+
+  /* Stack map on top, panel below */
+  .main{flex-direction:column}
+
+  /* Map takes 45% of screen height */
+  #mwrap{flex:none;height:45vh;width:100%}
+
+  /* Panel takes remaining space, scrollable */
+  #panel{width:100%;border-left:none;border-top:1px solid var(--bdr);flex:1;min-height:0}
+
+  /* Zoom controls smaller, repositioned */
+  .zc{bottom:8px;left:8px;gap:3px}
+  .zb{width:28px;height:28px;font-size:14px}
+
+  /* Card layout adjustments */
+  .card{padding:14px 12px}
+  .flagbox{height:110px;margin-bottom:10px}
+  .flagbox img{max-height:90px}
+  .cname{font-size:18px}
+
+  /* Quiz panel */
+  .qpanel{padding:12px;gap:10px}
+  .qflagbox{height:85px}
+  .qflagbox img{max-height:70px}
+
+  /* Progress bar */
+  #progwrap{padding:8px 12px}
+
+  /* Reset button */
+  #rstbtn{margin:0 12px 12px}
+
+  /* Search results dropdown */
+  .search-results{max-height:180px}
+}
 </style>
 </head>
 <body>
